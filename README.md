@@ -52,7 +52,7 @@ heroku create your-app-name
 
 3. Add PostgreSQL:
 ```bash
-heroku addons:create heroku-postgresql:mini
+heroku addons:create heroku-postgresql:essential-0
 ```
 
 4. Deploy:
