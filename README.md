@@ -1,6 +1,16 @@
 # Heroku Hackathon
 
-A FastAPI and HTMX project template ready for Heroku deployment.
+A FastAPI and HTMX project template ready for instant deployment.
+
+## Quick Deploy
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+Just click the button above to deploy this application to Heroku instantly! This will:
+1. Create a new Heroku application
+2. Set up a PostgreSQL database
+3. Deploy the code
+4. Create the database tables
+5. Start the application
 
 ## Local Development Setup
 
@@ -38,7 +48,8 @@ echo "DATABASE_URL=postgresql://postgres:postgres@localhost:5432/heroku_hackatho
 uvicorn app.main:app --reload
 ```
 
-## Heroku Deployment
+## Manual Heroku Deployment
+If you prefer to deploy manually instead of using the Deploy button:
 
 1. Install Heroku CLI and login:
 ```bash
@@ -52,7 +63,7 @@ heroku create your-app-name
 
 3. Add PostgreSQL:
 ```bash
-heroku addons:create heroku-postgresql:essential-0
+heroku addons:create heroku-postgresql:mini
 ```
 
 4. Deploy:
